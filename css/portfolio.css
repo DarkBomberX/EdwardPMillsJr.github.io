@@ -32,7 +32,7 @@ justify-content: center;
 Background: #d4d4d4;
 }
 
-nav a{ 
+nav a{
     text-decoration: none;
     color: black;
     padding: .2rem 3rem;
@@ -87,7 +87,7 @@ section ul {
     width: 100%;
     object-fit: cover;
     width: 300px;
-    height: 337px;  
+    height: 337px;
 }
 
 footer {
