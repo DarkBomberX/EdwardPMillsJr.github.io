@@ -10,7 +10,6 @@
     <nav>
         <a href="#aboutMe"> About Me</a>
         <a href="#skills">Skills</a>
-        <a href="#contactInfo">Contact Info</a>
         <a href="#projects">Projects</a>
     </nav>
 <main>
@@ -18,42 +17,83 @@
         <h2>About Me:</h2>
         <img id="me" src="images/me.jpg">
         <p> I'm a graduate of The Ohio State University, with a B.A. in
-            English. Post graduating, I pursued additional education in software devolpment.
+            English. Post graduating, I pursued additional education in software development.
             I like to think of my self as a fun and exciting person who wants to grow and develop in the world
             of software development. </p>
+            <p>
+               If you want to 
+            <span id="modal-trigger" class="live">contact me</span>!</p>
         </section>
         <section id="skills">
         <h2>Skills</h2>
         <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP)
  • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases • Source Control / Git </p>
 </section>
- <section id="contactInfo">
-    <h2>Contact Info</h2>
-    <ul>
-        <li>EdwardPMills@gmail.com</li>
-        <li>614-395-0548</li>
-        <li>https://github.com/EdwardPMillsJr?tab=repositories</li>
-        <li>https://www.linkedin.com/in/edwardpmills/</li>
-    </ul>
-</section>
     <section id="finishedProjects">
         <h2>Projects</h2>
         <div id="projects">
         <article>
-            <h3><a href="https://github.com/DarkBomberX/virtual-pet-amok">Virtual Pet Amok</a></h3>
+            <button type="button" class="collapsible">Virtual Pet Amok</button>
+            <div class="content">
+            <h3>Virtual Pet Amok</h3>
             <img src="images/petshelter.jpg">
             <p>A virtual pet similar to a Tamagotchi, where you can board, adopt, and take care of pets. This project shows my skills with
                 Classes, Super Classes, and Interfaces.</p>
+                <a href="https://github.com/DarkBomberX/virtual-pet-amok">Check it out on Git Hub</a>
+            </div>
         </article>
         <article>
-            <h3><a href="https://github.com/DarkBomberX/review-project">Spring Boot Setup and MVC</a></h3>
+            <button type="button" class="collapsible">Spring Boot Setup and MVC</button>
+            <div class="content">
+            <h3>Spring Boot Setup and MVC</h3>
             <img src="images/reviewsite.jpg">
             <p>A project to show my working skill with Spring Boot set up and knowledge of MVC</p>
+            <a href="https://github.com/DarkBomberX/review-project">Check it out on Git Hub</a>
+        </div>
         </article>
         </div>
+
+<div class="project-slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="images/petshelter.jpg" style="width:100%">
+      <div class="text">Virtual Pet Shelter</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="images/reviewsite.jpg" style="width:100%">
+      <div class="text">Spring Boot Review Site</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
     </section>
     </main>
     <footer>
         &copy; 2020
     </footer>
+<div id="backdrop">
+    <div id="modal">
+        <button class="text-button">Close</button>
+        <section id="contactInfo">
+            <h2>Contact Info</h2>
+            <div id="modal-content">
+            <ul>
+                <li>EdwardPMills@gmail.com</li>
+                <li>614-395-0548</li>
+                <li>https://github.com/EdwardPMillsJr?tab=repositories</li>
+                <li>https://www.linkedin.com/in/edwardpmills/</li>
+            </ul>
+        </div>
+        </section>
+    </div>
+</div>
+    <script src="./js/portfolio.js"></script>
 </body>
